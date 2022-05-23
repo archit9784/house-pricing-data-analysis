@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/static/app.js"></script>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+
+<body>
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070"
+        class="img1">
+    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" class="img3">
+    <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" class="img4">
+    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174" class="img5">
+    <div class="heading-cont">
+        <h1 class="heading">House Price Prediction</h1>
+    </div>
+    <div class="form-cont">
+        <div class="form-cont-border">
+            <form class="form">
+                <h2>Area (Square Feet)</h2>
+                <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+                <h2>BHK</h2>
+                <div class="switch-field">
+                    <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+                    <label for="radio-bhk-1">1</label>
+                    <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked />
+                    <label for="radio-bhk-2">2</label>
+                    <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+                    <label for="radio-bhk-3">3</label>
+                    <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+                    <label for="radio-bhk-4">4</label>
+                    <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+                    <label for="radio-bhk-5">5</label>
+                </div>
+            </form>
+            <form class="form">
+                <h2>Bath</h2>
+                <div class="switch-field">
+                    <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                    <label for="radio-bath-1">1</label>
+                    <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked />
+                    <label for="radio-bath-2">2</label>
+                    <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+                    <label for="radio-bath-3">3</label>
+                    <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                    <label for="radio-bath-4">4</label>
+                    <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                    <label for="radio-bath-5">5</label>
+                </div>
+                <h2>Location</h2>
+                <div>
+                    <select class="location" name="" id="uiLocations">
+                        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                        <option>Electronic City</option>
+                        <option>Rajaji Nagar</option>
+                    </select>
+                </div>
+                <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+                <div id="uiEstimatedPrice" class="result">
+                    <h2></h2>
+                </div>
+        </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1593604340846-4fbe9763a8f3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+        class="img2">
+</body>
+
+</html>
